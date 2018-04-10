@@ -1,14 +1,14 @@
-
-  // Initialize Firebase
 var config = {
     apiKey: "AIzaSyB-DizNRFwI2lwbtpPeL24qmdolk1yIc2I",
     authDomain: "firesbase-homework.firebaseapp.com",
     databaseURL: "https://firesbase-homework.firebaseio.com",
     projectId: "firesbase-homework",
-    storageBucket: "firesbase-homework.appspot.com",
+    storageBucket: "",
     messagingSenderId: "381231899552"
   };
   firebase.initializeApp(config);
+ 
+// 1. Initialize Firebase
 
 var database = firebase.database();
 
@@ -27,6 +27,8 @@ database.ref().on("child_added", function(childSnap) {
 });
 
 database.ref().on("value", function(snapshot) {
+   
+
 });
 
 //grabs information from the form
@@ -83,10 +85,3 @@ $("#addTrainBtn").on("click", function() {
 
     return false;
 });
-// Example Time Math
-// -----------------------------------------------------------------------------
-// Assume Employee start date of January 1, 2015
-// Assume current date is March 1, 2016
-
-// We know that this is 15 months.
-// Now we will create code in moment.js to confirm that any attempt we use meets this test case
