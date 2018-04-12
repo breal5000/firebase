@@ -48,23 +48,23 @@ $("#addTrainBtn").on("click", function() {
     var firstTrain = $("#firstInput").val().trim();
     var frequency = $("#frequencyInput").val().trim();
 
-    //ensures that each input has a value
-    //if (trainName == "") {
-      //  alert('Enter a train name.');
-        //return false;
-    //}
-    //if (destination == "") {
-      //  alert('Enter a destination.');
-        //return false;
-    //}
-    //if (firstTrain == "") {
-      //  alert('Enter a first train time.');
-        //return false;
-    //}
-    //if (frequency == "") {
-      //  alert('Enter a frequency');
-        //return false;
-    //}
+    // makes sure the user inputs all values
+    if (trainName == "") {
+        alert('Enter a train name.');
+        return false;
+    }
+    if (destination == "") {
+        alert('Enter a destination.');
+        return false;
+    }
+    if (firstTrain == "") {
+        alert('Enter a first train time.');
+        return false;
+    }
+    if (frequency == "") {
+        alert('Enter a frequency');
+        return false;
+    }
 
 
     //go back 1 year to make sure it's before current time.
@@ -95,6 +95,6 @@ $("#addTrainBtn").on("click", function() {
     $("#firstInput").val("");
     $("#frequencyInput").val("");
 
-    //return false;
+    
 });
 
